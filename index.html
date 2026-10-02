@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dr Durdana Aesthetic Physician — personalized aesthetic care, skin treatments, hair treatments and consultations at Lucky Medical Center, Hub Chowki."
+    />
+    <meta name="theme-color" content="#0e7c86" />
+    <link rel="icon" type="image/svg+xml" href="Assets/brand-logo.png">
+
+    <title>Dr Durdana Baiyan Aesthetic | Personalized Care</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="top-left">
+          <a href="tel:+923373830789">☎ 0337 3830789</a><span>•</span
+          ><span>Lucky Medical Center, Hub Chowki</span>
+        </div>
+        <div class="top-right">
+          <a href="mailto:aesthetik80@gmail.com">aesthetik80@gmail.com</a
+          ><a
+            class="social"
+            href="https://www.tiktok.com/@drdurdana_aesthetics?_r=1&_t=ZS-9ACCVXvMFHd"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          ><a
+            class="social"
+            href="https://wa.me/923373830789"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Dr Durdana Aesthetic home"
+          ><span>Dr Durdana Baiyan</span><small>AESTHETIC</small>
+          </a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="mainNav">
+          <a href="#home">Home</a><a href="#about">About</a
+          ><a href="#services">Services</a><a href="#results">Results</a
+          ><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a
+          ><a href="#contact">Contact</a>
+          <a class="nav-cta" href="#booking">Book Consultation</a>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+          >
+            <span id="themeIcon">☾</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">AESTHETIC PHYSICIAN • MBBS, RMP</p>
+            <h1>Healthy skin.<br /><em>Confident you.</em></h1>
+            <p class="lead">
+              Personalized aesthetic care focused on skin health, hair wellness
+              and natural-looking results.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#booking">Book Consultation</a
+              ><a class="btn ghost" href="#services">Explore Services</a>
+            </div>
+            <div class="hero-trust">
+              <span>✓ Personalized Care</span><span>✓ Modern Treatments</span
+              ><span>✓ Consultation First</span>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img
+              src="Assets/hero-image.jpg.jpg"
+              alt="Dr Durdana Aesthetic service information"
+              loading="eager"
+            />
+            <div class="floating-card">
+              <strong>Dr Durdana</strong><span>Aesthetic Physician</span
+              ><a
+                href="https://wa.me/923373830789?text=Hello%20Dr%20Durdana%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                target="_blank"
+                rel="noopener"
+                >WhatsApp Consultation →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="container booking-grid">
+          <div class="booking-card">
+            <p class="eyebrow">CONSULTATION</p>
+            <h2>Book your consultation</h2>
+            <p class="muted">
+              Choose WhatsApp for a direct consultation request, or use the
+              email form for a written enquiry.
+            </p>
+            <form id="bookingForm" novalidate>
+              <div class="form-grid">
+                <label>Full Name<input id="bName" required /></label
+                ><label>Phone<input id="bPhone" type="tel" required /></label
+                ><label>Email<input id="bEmail" type="email" /></label
+                ><label
+                  >Preferred Date<input
+                    id="bDate"
+                    type="date"
+                    required /></label
+                ><label>Preferred Time<input id="bTime" type="time" /></label
+                ><label
+                  >Service<select id="bService" required>
+                    <option value="">Select a service</option>
+                    <option>PRP (Face & Hair)</option>
+                    <option>Hydrafacial</option>
+                    <option>Laser Treatments</option>
+                    <option>Microneedling</option>
+                    <option>Meso Therapy</option>
+                    <option>Chemical Peels</option>
+                    <option>Mole & Wart Removal</option>
+                    <option>General Aesthetic Consultation</option>
+                  </select></label
+                >
+              </div>
+              <label
+                >Message<textarea
+                  id="bMessage"
+                  rows="3"
+                  placeholder="Tell us briefly what you would like to discuss..."
+                ></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="btn primary" type="submit">
+                  Book via WhatsApp</button
+                ><a
+                  class="btn secondary"
+                  href="mailto:aesthetik80@gmail.com?subject=Consultation%20Request"
+                  >Email Us</a
+                >
+              </div>
+              <p class="form-note" id="bookingStatus" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="booking-side">
+            <p class="eyebrow">WHY CHOOSE DR DURDANA</p>
+            <h2>Personalized care, clear guidance.</h2>
+            <div class="benefit-grid">
+              <article>
+                <b>01</b>
+                <h3>Consultation First</h3>
+                <p>Discuss your concerns before choosing a treatment.</p>
+              </article>
+              <article>
+                <b>02</b>
+                <h3>Focused Treatments</h3>
+                <p>Skin and hair services presented clearly and simply.</p>
+              </article>
+              <article>
+                <b>03</b>
+                <h3>Comfort & Care</h3>
+                <p>
+                  A patient-focused approach throughout your treatment journey.
+                </p>
+              </article>
+              <article>
+                <b>04</b>
+                <h3>Follow-up Support</h3>
+                <p>Keep communication open after your appointment.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-visual reveal-left">
+            <div class="certificate-card">
+              <div class="certificate-badge">QUALIFICATION • TRAINING</div>
+              <img
+                src="Assets/about-img.jpeg.jpeg"
+                alt="Certificate presented to Dr. Durdana Baiyan for completing a Botulinum Toxin lecture series and hands-on training"
+                loading="lazy"
+              />
+              <div class="certificate-caption">
+                <strong>Botulinum Toxin Training</strong>
+                ><span
+                  >Lecture Series &amp; Hands-On Training • 01 August 2025</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">MEET DR DURDANA</p>
+            <h2>Dr Durdana Baiyan</h2>
+            <p class="role">Aesthetic Physician • MBBS, RMP</p>
+            <p>
+              Dr. Durdana Baiyan is presented in the clinic materials as an
+              <strong>Aesthetic Physician (MBBS, RMP)</strong>, offering
+              personalized care across skin, hair and aesthetic treatments at
+              Lucky Medical Center. Her listed services include PRP for face and
+              hair, Hydrafacial, laser treatments, microneedling, meso therapy,
+              chemical peels, and mole &amp; wart removal.
+            </p>
+            <p>
+              The clinic flyer also highlights a personalized-care approach and
+              consultation-focused treatment journey. Her supplied certificate
+              documents completion of a Botulinum Toxin lecture series and
+              hands-on training.
+            </p>
+            <div class="credential-box">
+              <span>MBBS</span><span>RMP</span><span>Aesthetic Physician</span
+              ><span>Lucky Medical Center • Hub Chowki</span>
+            </div>
+            <a class="text-link" href="#booking">Start a consultation →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">CREDENTIALS • GALLERY</p>
+              <h2>Certificates, clinic moments &amp; patient feedback</h2>
+              <p class="muted head-note">
+                A curated collection of supplied certificates, professional
+                photos and patient feedback. Tap any image to view it larger.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-group-head">
+              <div>
+                <p class="eyebrow">01 • CERTIFICATES</p>
+                <h3>Training &amp; professional credentials</h3>
+              </div>
+            </div>
+            <div class="gallery-grid certificates-grid">
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/one.jpeg"
+                  alt="Dr Durdana Botulinum Toxin lecture series and hands-on training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Botulinum Toxin Training</strong>
+                  ><span>Lecture Series &amp; Hands-On Training</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/two.jpg"
+                  alt="Professional training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Certificate</strong>
+                  ><span>Training &amp; credential</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/thrid.jpeg"
+                  alt="Professional training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Certificate</strong>
+                  ><span>Training &amp; credential</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/fourth.jpeg"
+                  alt="Professional training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Certificate</strong>
+                  ><span>Training &amp; credential</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/fifth.jpeg"
+                  alt="Professional training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Certificate</strong>
+                  ><span>Training &amp; credential</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card portrait">
+                <img
+                  src="Assets/six.jpeg"
+                  alt="Professional training certificate"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Certificate</strong>
+                  ><span>Training &amp; credential</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="gallery-group">
+            <div class="gallery-group-head">
+              <div>
+                <p class="eyebrow">02 • PROFESSIONAL &amp; CLINIC</p>
+                <h3>Dr Durdana Baiyan &amp; clinic materials</h3>
+              </div>
+            </div>
+            <div class="gallery-grid clinic-gallery">
+              <figure class="gallery-card">
+                <img
+                  src="Assets/hero-image.jpg.jpg"
+                  alt="Dr Durdana Aesthetic services information"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Dr Durdana Baiyan Aesthetic</strong>
+                  ><span>Services &amp; clinic information</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card square">
+                <img
+                  src="Assets/IMG-20261001-WA0006.jpg"
+                  alt="PRP hair treatment before and after"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>PRP Hair Treatment</strong>
+                  ><span>Before &amp; after result</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card">
+                <img
+                  src="Assets/IMG-20261001-WA0020.jpg"
+                  alt="Lucky Medical Center and aesthetic treatment information"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Lucky Medical Center</strong>
+                  ><span>Clinic &amp; treatment information</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card landscape">
+                <img
+                  src="Assets/WhatsApp Image 2026-10-02 at 1.09.00 PM.jpeg"
+                  alt="Dr Durdana with a professional training group"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Professional Training</strong>
+                  ><span>Training event</span>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card landscape">
+                <img
+                  src="Assets/WhatsApp Image 2026-10-02 at 1.17.56 PM.jpeg"
+                  alt="Dr Durdana during a clinical procedure"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Clinical Practice</strong>
+                  ><span>Professional photo</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          
+      </section>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-head light">
+            <div>
+              <p class="eyebrow">OUR SERVICES</p>
+              <h2>Personalized aesthetic treatments</h2>
+            </div>
+            <a class="outline-light" href="#booking">Ask about a treatment</a>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <span>01</span>
+              <h3>PRP (Face & Hair)</h3>
+              <p>
+                Rejuvenate, restore and support healthier-looking skin and hair.
+              </p>
+              <a data-service="PRP (Face & Hair)" href="#"
+                >WhatsApp enquiry →</a
+              >
+            </article>
+            <article class="service-card">
+              <span>02</span>
+              <h3>Hydrafacial</h3>
+              <p>
+                Cleanse, hydrate and refresh the skin for a brighter appearance.
+              </p>
+              <a data-service="Hydrafacial" href="#">WhatsApp enquiry →</a>
+            </article>
+            <article class="service-card">
+              <span>03</span>
+              <h3>Laser Treatments</h3>
+              <p>
+                Treatments presented for pigmentation, acne and hair reduction
+                concerns.
+              </p>
+              <a data-service="Laser Treatments" href="#">WhatsApp enquiry →</a>
+            </article>
+            <article class="service-card">
+              <span>04</span>
+              <h3>Microneedling</h3>
+              <p>
+                Designed to support collagen and smoother-looking skin texture.
+              </p>
+              <a data-service="Microneedling" href="#">WhatsApp enquiry →</a>
+            </article>
+            <article class="service-card">
+              <span>05</span>
+              <h3>Meso Therapy</h3>
+              <p>Refresh, rejuvenate and support a more even-looking tone.</p>
+              <a data-service="Meso Therapy" href="#">WhatsApp enquiry →</a>
+            </article>
+            <article class="service-card">
+              <span>06</span>
+              <h3>Chemical Peels</h3>
+              <p>
+                Support clearer-looking skin and a brighter, more even
+                appearance.
+              </p>
+              <a data-service="Chemical Peels" href="#">WhatsApp enquiry →</a>
+            </article>
+            <article class="service-card">
+              <span>07</span>
+              <h3>Mole & Wart Removal</h3>
+              <p>
+                Safe, effective and precise removal options discussed during
+                consultation.
+              </p>
+              <a data-service="Mole & Wart Removal" href="#"
+                >WhatsApp enquiry →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="results section" id="results">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">BEFORE • AFTER • TREATMENT MEDIA</p>
+              <h2>Real clinic media</h2>
+            </div>
+            <!-- <p class="muted head-note">
+              Images and videos supplied in your project ZIP are used here.
+              Replace or remove any item whenever you want.
+            </p> -->
+          </div>
+          <div class="media-grid">
+            <figure class="media-card wide">
+              <img
+                src="Assets/IMG-20261001-WA0006.jpg"
+                alt="PRP hair treatment before and after supplied by the clinic"
+                loading="lazy"
+              />
+              <figcaption>PRP Hair Treatment</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img
+                src="Assets/before1.jpg"
+                alt="Dr Durdana Aesthetic services poster"
+                loading="lazy"
+              />
+              <figcaption>Face prp + microneedling</figcaption>
+            </figure>
+            
+            <figure class="media-card">
+              <img
+                src="Assets/before2.jpg"
+                alt="Lucky Medical Center and aesthetic treatment information"
+                loading="lazy"
+              />
+              <figcaption>Face prp + microneedling</figcaption>
+            </figure>
+
+             <figure class="media-card">
+              <img
+                src="Assets/before3.jpg"
+                alt="Lucky Medical Center and aesthetic treatment information"
+                loading="lazy"
+              />
+              <figcaption>Face prp + microneedling</figcaption>
+            </figure>
+
+             <figure class="media-card">
+              <img
+                src="Assets/before4.jpg"
+                alt="Lucky Medical Center and aesthetic treatment information"
+                loading="lazy"
+              />
+              <figcaption>Face prp + microneedling</figcaption>
+            </figure>
+        
+            <figure class="media-card video">
+              <video
+                controls
+                preload="metadata"
+                playsinline
+                src="Assets/VID-20261001-WA0021.mp4"
+              ></video>
+              <figcaption>Clinic treatment video</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">PATIENT REVIEWS</p>
+              <h2>Messages from patients</h2>
+              <p class="slider-hint">
+                Swipe, drag or use the arrows to explore reviews.
+              </p>
+            </div>
+            <div class="slider-controls">
+              <button id="reviewPrev" aria-label="Previous review">←</button
+              ><button id="reviewNext" aria-label="Next review">→</button>
+            </div>
+          </div>
+          <div class="review-window">
+            <div class="review-track" id="reviewTrack">
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Doctor ur hydrafacial is best and of the best two time i did
+                  my hydrafacial from it give me the best results even though
+                  now my heart not want to do the hydrafacial from another
+                  doctor still waiting for you come soon in turbat ❤️”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “My experience was great with hydra facial ❤️ I'm satisfied
+                  with ur work”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>“Outstanding n results are impressive”</p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “I got my hydrafacial done from Dr Durdana Baiyan.. It was so
+                  Satisfying, she's very honest and responding.. if anyone
+                  dealing skin problem must visit her... So happy to find a good
+                  dermatologist in Gwader. I feel visible differences on my skin
+                  just after couple of treatments... felt super calm while the
+                  procedure as she made sure i am comfortable and the procedure
+                  is pain free.. Apart from this she will listen to your problem
+                  and will guide you pre and post treatment...”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Mashallah man ganoka gu wati dema result zabarsat atka thank
+                  u”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Dear Dr Durdana thank you so much for your kinds suggestions
+                  for my dark patches and dull skin your online treatment made
+                  my skin much better plumper hope you will suggest me some more
+                  for best results”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Dr mn ekya elaj kota shr nbotga bale tae elaj cha baz baz
+                  fark atka i am very happy mn nzene chon tar shukry hada bekni”
+                </p>
+                <span>Patient review</span>
+              </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Dear Durdana (my little doctor) thanks for going above and
+                  beyond in my treatment and recovery your skill and attention
+                  to detail changed my life. stay blessed ❤️”
+                </p>
+                <span>Patient review</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">READY WHEN YOU ARE</p>
+            <h2>Let’s discuss your skin or hair concerns.</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="btn primary" href="#booking">Book Consultation</a
+            ><a
+              class="btn light"
+              href="https://wa.me/923373830789?text=Hello%20Dr%20Durdana%2C%20I%20would%20like%20to%20book%20a%20consultation."
+              target="_blank"
+              rel="noopener"
+              >WhatsApp</a
+            ><a class="btn light" href="tel:+923373830789">Call 0337 3830789</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">CONTACT</p>
+            <h2>Get in touch with Dr Durdana</h2>
+            <div class="contact-list">
+              <a href="tel:+923373830789"
+                ><b>Phone</b><span>0337 3830789</span></a
+              ><a
+                href="https://wa.me/923373830789"
+                target="_blank"
+                rel="noopener"
+                ><b>WhatsApp</b><span>Chat directly</span></a
+              ><a href="mailto:aesthetik80@gmail.com"
+                ><b>Email</b><span>aesthetik80@gmail.com</span></a
+              ><a
+                href="https://www.tiktok.com/@drdurdana_aesthetics?_r=1&_t=ZS-9ACCVXvMFHd"
+                target="_blank"
+                rel="noopener"
+                ><b>TikTok</b><span>@drdurdana_aesthetics</span></a
+              >
+            </div>
+            <div class="address-box">
+              <strong>Lucky Medical Center</strong>
+              <p>OPD 9, near Civic Center, Main RCD Road, Hub Chowki.</p>
+              <small>from 5:00 AM to 8:00 PM</small>
+            </div>
+          </div>
+          <div class="contact-form-card">
+            <h3>Email enquiry</h3>
+            <p class="muted">
+              Secure email enquiry form — your message will be sent through
+              Formspree.
+            </p>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/meaownor"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New consultation enquiry — Dr Durdana Baiyan Aesthetic"
+              /><label>Name<input name="name" required /></label
+              ><label>Email<input name="email" type="email" required /></label
+              ><label>Phone<input name="phone" type="tel" required /></label
+              ><label
+                >Message<textarea
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea></label
+              ><button class="btn primary" type="submit">
+                Send Email Enquiry
+              </button>
+              <div
+                id="contactStatus"
+                class="form-note"
+                aria-live="polite"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home"
+            ><span>Dr Durdana Baiyan</span><small>AESTHETIC</small></a
+          >
+          <p>Personalized aesthetic care for healthy skin and confident you.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#about">About</a><a href="#services">Services</a
+          ><a href="#results">Results</a><a href="#reviews">Reviews</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+923373830789">0337 3830789</a
+          ><a href="mailto:aesthetik80@gmail.com">aesthetik80@gmail.com</a
+          ><a href="https://wa.me/923373830789" target="_blank" rel="noopener"
+            >WhatsApp</a
+          ><a
+            href="https://www.tiktok.com/@drdurdana_aesthetics?_r=1&_t=ZS-9ACCVXvMFHd"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          >
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>
+            Lucky Medical Center<br />OPD 9, near Civic Center<br />Main RCD
+            Road, Hub Chowki
+          </p>
+        </div>
+      </div>
+      <div class="container copyright">
+        © 2026 Dev_Saheem. All rights reserved. Designed and developed by
+        <a href="https://devsaheem.com" target="_blank" rel="noopener"
+          >Dev_Saheem</a
+        >.
+      </div>
+    </footer>
+    <a
+      class="floating-wa"
+      href="https://wa.me/923373830789?text=Hello%20Dr%20Durdana%2C%20I%20would%20like%20to%20book%20a%20consultation."
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      >WA</a
+    >
+    <script src="script.js"></script>
+  </body>
+</html>
